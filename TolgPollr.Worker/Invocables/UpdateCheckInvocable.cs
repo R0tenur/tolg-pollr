@@ -31,7 +31,6 @@ namespace TolgPollr.Worker.Invocables
                 var repository = scope.ServiceProvider.GetRequiredService<ICurrentStateRepository>();
                 try
                 {
-                    var a = _configuration.AsEnumerable();
                     var checkerUrl = _configuration.GetValue<string>(ConfigurationConstants.CheckerUrl);
                     var authKey = _configuration.GetValue<string>(ConfigurationConstants.CheckerAuthKey);
                     var serverTask = checkerUrl.WithHeader(AuthHeaderName, authKey).GetJsonAsync<HouseModel>();

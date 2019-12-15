@@ -7,9 +7,7 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v1
     - name: Setup .NET Core
@@ -18,6 +16,11 @@ jobs:
         dotnet-version: 3.0.100
     - name: Test
       run: dotnet test
-    - name: Publish 
+    - name: Build 
       run: cd TolgPollr.Worker && dotnet publish -r linux-arm --configuration Release /p:PublishSingleFile=true --self-contained
-      run: cp -R TolgPollr.Worker/bin/Release/netcoreapp3.0/linux-arm/publish dist
+    - name: Publish to Releases
+    - uses: actions/checkout@v1
+    - uses: ncipollo/release-action@v1
+      with:
+        artifacts: "TolgPollr.Worker/bin/Release/netcoreapp3.0/linux-arm/publish"
+        token: ${{ secrets.GITHUB_TOKEN }}

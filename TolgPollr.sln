@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TolgPollr.Worker", "TolgPollr.Worker\TolgPollr.Worker.csproj", "{3C81190A-27C3-435C-82DC-C0979192472A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TolgPollr.Worker.Tests", "TolgPollr.Worker.Tests\TolgPollr.Worker.Tests.csproj", "{EE0740FA-45B2-4153-993F-D15D3708110C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,17 @@ Global
 		{3C81190A-27C3-435C-82DC-C0979192472A}.Release|x64.Build.0 = Release|Any CPU
 		{3C81190A-27C3-435C-82DC-C0979192472A}.Release|x86.ActiveCfg = Release|Any CPU
 		{3C81190A-27C3-435C-82DC-C0979192472A}.Release|x86.Build.0 = Release|Any CPU
+		{EE0740FA-45B2-4153-993F-D15D3708110C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE0740FA-45B2-4153-993F-D15D3708110C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE0740FA-45B2-4153-993F-D15D3708110C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EE0740FA-45B2-4153-993F-D15D3708110C}.Debug|x64.Build.0 = Debug|Any CPU
+		{EE0740FA-45B2-4153-993F-D15D3708110C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EE0740FA-45B2-4153-993F-D15D3708110C}.Debug|x86.Build.0 = Debug|Any CPU
+		{EE0740FA-45B2-4153-993F-D15D3708110C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE0740FA-45B2-4153-993F-D15D3708110C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE0740FA-45B2-4153-993F-D15D3708110C}.Release|x64.ActiveCfg = Release|Any CPU
+		{EE0740FA-45B2-4153-993F-D15D3708110C}.Release|x64.Build.0 = Release|Any CPU
+		{EE0740FA-45B2-4153-993F-D15D3708110C}.Release|x86.ActiveCfg = Release|Any CPU
+		{EE0740FA-45B2-4153-993F-D15D3708110C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

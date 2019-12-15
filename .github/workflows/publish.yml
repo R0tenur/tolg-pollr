@@ -19,8 +19,8 @@ jobs:
     - name: Build 
       run: cd TolgPollr.Worker && dotnet publish -r linux-arm --configuration Release /p:PublishSingleFile=true --self-contained
     - name: Publish to Releases
-    - uses: actions/checkout@v1
-    - uses: ncipollo/release-action@v1
+      uses: actions/checkout@v1
+      uses: ncipollo/release-action@v1
       with:
         artifacts: "TolgPollr.Worker/bin/Release/netcoreapp3.0/linux-arm/publish/TolgPollr.Worker"
         token: ${{ secrets.GITHUB_TOKEN }}

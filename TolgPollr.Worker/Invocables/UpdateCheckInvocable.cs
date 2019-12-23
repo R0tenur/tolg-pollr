@@ -57,7 +57,7 @@ namespace TolgPollr.Worker.Invocables
                     {
                         await excecutor.ExecuteCommand(
                             TerminalCommandConstants.LircCommand,
-                            TerminalCommandConstants.LircHeatParameters
+                            TerminalCommandConstants.LircCoolParameters
                         );
                     }
 

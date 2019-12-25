@@ -4,7 +4,7 @@ namespace TolgPollr.Worker.Configuration
     {
         public const string LircCommand = "irsend";
 
-        public static readonly string[] LircHeatParameters = new[] { "send_once", "ac", "on" };
-        public static readonly string[] LircCoolParameters = new[] { "send_once", "ac", "off" };
+        public static readonly string[] LircHeatParameters = new[] { "send_once", "acon", "on" };
+        public static readonly string[] LircCoolParameters = new[] { "send_once", "acoff", "off" };
     }
 }
